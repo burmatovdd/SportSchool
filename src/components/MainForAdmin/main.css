@@ -21,10 +21,6 @@
     width: 200px;
 }
 
-.no-item{
-    display: none;
-}
-
 .item{
     margin-bottom: 8px;
 }
@@ -37,5 +33,36 @@
     margin-right: 24px;
 }
 
-.exit-button{
+.sports-buttons{
+    display: flex;
+}
+
+.button-add{
+    margin-right: 10px;
+}
+
+.sports-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.no-item{
+    display: none;
+}
+
+.Customers{
+    display: flex;
+}
+
+.right-add{
+    margin-bottom: 24px;
+}
+
+.input{
+    width: 150px;
+    height: 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding-left: 10px;
 }

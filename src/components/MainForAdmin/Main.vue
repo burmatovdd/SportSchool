@@ -50,8 +50,6 @@
       </div>
       <button class="top-button exit-button" @click="goBack">Выход</button>
     </div>
-    <div class="modal">
-    </div>
   </div>
 </div>
 </template>
