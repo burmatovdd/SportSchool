@@ -7,8 +7,9 @@
           <div class="left">
             <button @click="showCustomers" class="top-button">Заказчики</button>
             <ul id="customer" class="no-item customer-list">
-              <li class="customer item" v-for="(customer,index) in customers" :key="index">
+              <li class="customer item" v-for="(customer,index) in customers">
                 {{customer.item}}
+                <button @click="customers.splice(index, 1)" class="top-button delete">Удалить</button>
               </li>
             </ul>
           </div>
@@ -16,10 +17,6 @@
             <div class="right-add">
               <input id="add" type="text" placeholder="Введите ФИО заказчика" class="input">
               <button @click="addCustomer" class="top-button">Добавить</button>
-            </div>
-            <div class="right-delete">
-              <input id="delete" type="text" placeholder="Введите ФИО заказчика" class="input">
-              <button @click="deleteCustomer" class="top-button">Удалить</button>
             </div>
           </div>
         </div>
@@ -60,9 +57,6 @@ export default defineComponent({
       this.$data.customers.push({item: vl})
       console.log(this.$data.customers)
     },
-    deleteCustomer: function (index){
-      this.$data.customers.splice(index, 1);
-    }
   }
 })
 </script>

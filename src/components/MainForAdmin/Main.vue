@@ -8,16 +8,18 @@
           <div class="Sports">
             <button @click="showSports" class="top-button">Виды спорта</button>
             <ul id="sport" class="no-item customer-list">
-              <li class="customer item" v-for="sport in sports">
+              <li class="customer item" v-for="(sport,index) in sports">
                 {{sport.item}}
+                <button @click="sports.splice(index, 1)" class="top-button delete">Удалить</button>
               </li>
             </ul>
           </div>
           <div class="Customers">
             <button @click="showCustomers" class="top-button">Заказчики</button>
             <ul id="customer" class="no-item customer-list">
-              <li class="customer item" v-for="customer in customers">
+              <li class="customer item" v-for="(customer,index) in customers">
                 {{customer.item}}
+                <button @click="customers.splice(index, 1)" class="top-button delete">Удалить</button>
               </li>
             </ul>
           </div>
@@ -27,8 +29,9 @@
             <button @click="showContracts" class="top-button">Договоры</button>
             <div class="contracts-list">
               <ul id="contract" class="no-item contract-list">
-                <li class="contract item" v-for="contract in contracts">
+                <li class="contract item" v-for="(contract,index) in contracts">
                   Номер: {{ contract.item }} <br> Дата заключения: {{ contract.item2 }}
+                  <button @click="contracts.splice(index, 1)" class="top-button delete">Удалить</button>
                 </li>
               </ul>
             </div>
@@ -37,11 +40,12 @@
             <button @click="showStudents" class="top-button">Спортшкольники</button>
             <div class="student-list">
               <ul id="student" class="no-item student">
-                <li class="contract item" v-for="student in students">
+                <li class="contract item" v-for="(student,index) in students">
                   ФИО: {{ student.item }}
                   <br> Номер договар: {{ student.item2 }}
                   <br> Номер группы: {{student.item3}}
                   <br> Группа здоровья: {{student.item4}}
+                  <button @click="students.splice(index, 1)" class="top-button delete">Удалить</button>
                 </li>
               </ul>
             </div>

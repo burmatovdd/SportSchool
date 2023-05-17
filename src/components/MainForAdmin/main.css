@@ -50,9 +50,6 @@
     display: none;
 }
 
-.Customers{
-    display: flex;
-}
 
 .right-add{
     margin-bottom: 24px;
@@ -65,4 +62,9 @@
     border-radius: 5px;
     margin-top: 10px;
     padding-left: 10px;
+    margin-right: 16px;
+}
+
+.delete{
+    width: 100px;
 }
