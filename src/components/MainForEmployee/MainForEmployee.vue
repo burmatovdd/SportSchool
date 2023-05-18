@@ -55,7 +55,6 @@ export default defineComponent({
     addCustomer: function (){
       let vl = document.getElementById('add').value
       this.$data.customers.push({item: vl})
-      console.log(this.$data.customers)
     },
   }
 })
