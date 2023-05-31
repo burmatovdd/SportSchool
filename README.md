@@ -1,7 +1,17 @@
-# Vue 3 + Vite
+# SportSchool
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+![GitHub last commit](https://img.shields.io/github/last-commit/burmatovdd/SportSchool?style=flat-square)
+![GitHub top language](https://img.shields.io/github/languages/top/burmatovdd/SportSchool?style=flat-square)
 
-## Recommended IDE Setup
+# :memo: Задача
+> Реализовать функциональный интерфейс для спортивной школы.
+>
+> Необходимо создать web-сервис с возможностью подключения к нему с стороны администратора и с стороны сотрудника.
+>
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+# :rocket: Запуск проекта
+> Запуск сервиса (запускать из корневой папки)
+> 
+> `npm i`
+> 
+> `npm run dev`
